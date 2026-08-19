@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Daniel Muniz — investigo, analiso e diagnostico: hardware e sistemas — e, nas horas vagas, aplicações web e landing pages. IA acelera, eu conduzo, reviso e valido.">
+  <meta name="author" content="Daniel Muniz de Souza">
+  <meta name="robots" content="index, follow">
+  <title>dmpmuniz — investigo e diagnostico</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="dmpmuniz@linux ~ — Daniel Muniz">
+  <meta property="og:description" content="Investigo, analiso e diagnostico — hardware e sistemas — e, nas horas vagas, aplicações web e landing pages.">
+  <meta property="og:url" content="https://dmpmuniz.github.io/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="profile:first_name" content="Daniel">
+  <meta property="profile:last_name" content="Muniz de Souza">
+  <meta property="profile:username" content="dmpmuniz">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="dmpmuniz@linux ~ — Daniel Muniz">
+  <meta name="twitter:description" content="Investigo, analiso e diagnostico — hardware e sistemas — e, nas horas vagas, aplicações web e landing pages.">
+
+  <link rel="canonical" href="https://dmpmuniz.github.io/">
+  <link rel="stylesheet" href="src/style.css?v=4">
+  <noscript><style>.sec { opacity: 1; transform: none; }</style></noscript>
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.style.colorScheme = t;
+    } catch (e) {}
+  </script>
+  <script defer src="src/i18n.js?v=5"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="skip-link" href="#conteudo" data-i18n="skip.link">Pular para o conteúdo</a>
+
+  <header class="top">
+    <div class="top-row">
+      <span class="prompt">dmpmuniz@linux:~$</span>
+      <nav class="nav" aria-label="Navegação">
+        <ul>
+          <li><a href="#sobre-mim" data-i18n="nav.about">sobre mim</a></li>
+          <li><a href="#apps" data-i18n="nav.apps">meus apps</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <div class="theme" role="group" aria-label="Tema claro/escuro">
+          <button class="lang-btn theme-sel" data-theme="light" aria-pressed="false" data-i18n-aria="theme.light" aria-label="Tema claro">
+            <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button class="lang-btn theme-sel" data-theme="dark" aria-pressed="false" data-i18n-aria="theme.dark" aria-label="Tema escuro">
+            <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+  <section class="hero">
+    <h1><span data-i18n="hero.greeting">Oi, meu nome é</span> <span class="accent">Daniel Muniz</span>.</h1>
+    <p class="tagline" data-i18n="hero.tagline">Eu <strong>investigo, analiso e faço diagnósticos de hardware</strong> e sistemas — e, nas horas vagas, aplicações web e landing pages.</p>
+    <p class="sub"><span data-i18n="hero.sub">Sou entusiasta de tecnologia no geral: testo ferramentas novas, trabalho com agentes de IA e LLMs — mas quem conduz, revisa e valida sou eu. Aprendo na prática.</span> <span class="cursor" aria-hidden="true">▊</span></p>
+    <div class="scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <section id="sobre-mim" class="sec">
+    <h2><span class="prompt" aria-hidden="true">$</span> <span data-i18n="what.title">sobre mim</span></h2>
+    <p data-i18n="what.intro">Sou apaixonado por tecnologia desde sempre. Me formei em Análise e
+       Desenvolvimento de Sistemas — gosto de aprender como as tecnologias funcionam,
+       de entender o hardware por dentro. Comecei montando e consertando computadores,
+       e continuo aprendendo — agora com agentes de IA, que me abriram novas
+       possibilidades de tirar minhas ideias do papel.</p>
+    <dl class="rows">
+      <div class="row"><dt>hardware</dt><dd data-i18n="what.hw">Faço diagnósticos e instalações de hardware. Desenvolvi também um wrapper para recuperar e certificar HDDs mecânicos — <a href="https://github.com/dmpmuniz/OldButGold" rel="noopener noreferrer">OldButGold</a>.</dd></div>
+      <div class="row"><dt data-i18n="what.sys">sistemas</dt><dd data-i18n="what.sys.desc">Instalo, configuro e otimizo Windows e Linux — e troubleshooting quando preciso.</dd></div>
+      <div class="row"><dt>web</dt><dd data-i18n="what.web">Desenvolvo aplicações web e landing pages para microempresários e comércio local</dd></div>
+    </dl>
+    <div class="scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <section id="apps" class="sec">
+    <h2><span class="prompt" aria-hidden="true">$</span> <span data-i18n="apps.title">meus apps</span></h2>
+    <dl class="rows">
+      <div class="row">
+        <dt><a href="https://github.com/dmpmuniz/OldButGold" rel="noopener noreferrer">OldButGold</a></dt>
+        <dd data-i18n="apps.obg">Criei o OldButGold para uso pessoal, mas vi que pode ajudar outras pessoas — um wrapper que une SMART, badblocks e GPT para recuperar e certificar HDDs mecânicos: o que antes era um monte de comandos no terminal vira poucos passos.</dd>
+      </div>
+      <div class="row">
+        <dt><a href="https://axonsync.com.br" rel="noopener noreferrer">AxonSync</a></dt>
+        <dd data-i18n="apps.axon">A ideia desse app surgiu de uma necessidade real do meu personal trainer: treinos com IA, gestão de alunos, execução offline.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="sec" id="contato">
+    <h2><span class="prompt" aria-hidden="true">$</span> <span data-i18n="contact.title">contato</span></h2>
+    <ul class="lines">
+      <li>email: <a href="mailto:dmp.muniz@gmail.com">dmp.muniz@gmail.com</a></li>
+      <li>github: <a href="https://github.com/dmpmuniz" rel="noopener noreferrer">github.com/dmpmuniz</a></li>
+    </ul>
+  </section>
+
+  </main>
+
+  <footer class="foot">
+    <span data-i18n="foot.made">Criado com 🤍 🥰 😤 😭 e muito 😍 desde 2023.</span>
+    <span data-i18n="foot.credits">© 2023–2026 Daniel Muniz · feito com agentes de IA</span>
+  </footer>
+
+</div>
+</body>
+</html>
