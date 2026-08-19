@@ -1,0 +1,15 @@
+{
+  "name": "dmpmuniz-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site pessoal — fonte em src/, build minificado + watermark em docs/",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.31.0"
+  }
+}
