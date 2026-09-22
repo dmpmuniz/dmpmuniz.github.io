@@ -12,8 +12,6 @@
 html { box-sizing: border-box; }
 button { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
-
 body {
   margin: 0;
   background: var(--bg);
@@ -83,7 +81,6 @@ body {
   text-decoration: none;
   letter-spacing: .03em;
   border-bottom: 1px solid transparent;
-  transition: color .2s ease, border-color .2s ease;
 }
 .nav a:hover { color: var(--ink); border-color: var(--accent); }
 
@@ -108,7 +105,6 @@ body {
   border-radius: 3px;
   padding: 0 .35rem;
   cursor: pointer;
-  transition: color .2s ease, background .2s ease;
 }
 .lang-btn:hover { color: var(--ink); }
 .lang-btn.active {
@@ -134,29 +130,7 @@ h1 {
 .sub { color: var(--muted); margin: 0; }
 p, dd { text-wrap: pretty; }
 
-.scroll-hint {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.75rem;
-  color: var(--muted);
-}
-.scroll-hint svg { animation: hint-bounce 2s ease-in-out infinite; }
-@keyframes hint-bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(7px); }
-}
-
-.cursor { display: inline-block; animation: blink 1.1s steps(1) infinite; }
-@keyframes blink { 50% { opacity: 0; } }
-
 /* sections */
-.sec {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .5s ease, transform .5s ease;
-}
-.sec.visible { opacity: 1; transform: translateY(0); }
-
 .sec { padding: 2.5rem 0; border-top: 1px solid var(--border); }
 .sec h2 { font-size: 1rem; font-weight: 600; margin: 0 0 1.5rem; }
 .sec h3 { margin: 0 0 .5rem; }
@@ -227,10 +201,4 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 @media (pointer: coarse) {
   .lang-btn { min-height: 1.5rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .scroll-hint svg, .cursor { animation: none; }
-  .sec { transition: none; }
 }

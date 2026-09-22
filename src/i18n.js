@@ -16,10 +16,6 @@
       'apps.title': 'meus apps',
       'apps.obg': 'Criei o OldButGold para uso pessoal, mas vi que pode ajudar outras pessoas — um wrapper que une SMART, badblocks e GPT para recuperar e certificar HDDs mecânicos: o que antes era um monte de comandos no terminal vira poucos passos.',
       'apps.axon': 'A ideia desse app surgiu de uma necessidade real do meu personal trainer: treinos com IA, gestão de alunos, execução offline.',
-      'proj.title': 'outros projetos',
-      'proj.cwm': 'Landing page do Grupo CWM — soluções em empreendimentos: topografia, marinha, SPU e GRAPROHAB.',
-      'proj.prado': 'Landing page do Grupo Prado — gestora de obras em Ilhabela e região.',
-      'proj.delucca': 'Site institucional da De Lucca Arquitetura — arquitetura e construção em Itaguassu.',
       'contact.title': 'contato',
       'theme.light': 'Tema claro',
       'theme.dark': 'Tema escuro',
@@ -42,10 +38,6 @@
       'apps.title': 'my apps',
       'apps.obg': 'I built OldButGold for personal use, but I saw it could help others — a wrapper that combines SMART, badblocks and GPT to recover and certify mechanical HDDs: what used to be a bunch of terminal commands becomes a few steps.',
       'apps.axon': 'This app came from a real need of my personal trainer: AI workouts, student management, offline execution.',
-      'proj.title': 'other projects',
-      'proj.cwm': 'Landing page for Grupo CWM — development solutions: surveying, marine services, SPU and GRAPROHAB.',
-      'proj.prado': 'Landing page for Grupo Prado — construction management in Ilhabela and region.',
-      'proj.delucca': 'Institutional website for De Lucca Arquitetura — architecture and construction in Itaguassu.',
       'contact.title': 'contact',
       'theme.light': 'Light theme',
       'theme.dark': 'Dark theme',
@@ -132,24 +124,4 @@
       try { localStorage.setItem('theme', b.dataset.theme); } catch (e) {}
     });
   });
-})();
-
-(function () {
-  var contact = document.querySelector('#contato');
-  if (contact) contact.classList.add('visible');
-
-  var sections = document.querySelectorAll('.sec:not(#contato)');
-
-  if (!('IntersectionObserver' in window)) {
-    sections.forEach(function (s) { s.classList.add('visible'); });
-    return;
-  }
-
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      e.target.classList.toggle('visible', e.isIntersecting);
-    });
-  }, { threshold: 0.25, rootMargin: '0px 0px -10% 0px' });
-
-  sections.forEach(function (s) { io.observe(s); });
 })();
